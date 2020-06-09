@@ -1,422 +1,195 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script type="javascript" src = "js/bootstrap.min.js"></script>
-    <style>
-   
-         .item{
-            background: #333;
-            text-align: center;
-            height: 500px !important;
-        }
-        .carousel{
-            margin-top: 20px;
-        }
-        .img-wrap{
-            width: 700px;
-            height: 500px;
-        }
-        .carousel-caption{
-            text-shadow: black 5px 2px 5px;
-        }
-        .intro{
-       
-            color:white;
-            font-size: large;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            height: 100vh;;
-        }
-        .tab-content{
-            border-left: 1px solid #ddd;
-            border-right: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
-            padding:0px;
-        }
-        .nav-tabs{
-            margin-bottom:0;
-        }
-        #purple{
-            background:linear-gradient(#09090a,  rgb(51, 51, 51));
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        #purple h2{
-            color:white;  
-        }
-        #white{
-            background-color:white;
-        }
-        .nav-tabs a{
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: large;
-        }
-        a:hover, a:active{
-            color: green;
-            text-decoration: none;
-        }
-       .kim a{
-           color: darkblue;
-        }
-        #img{
-            position: relative;
-            top: -200px;
-        }
-        .gradient{
-            text-decoration-color: blue;
-        }
-        .greet{
-            text-align: center;
-            
-        }
-         #nav{
-            text-decoration: none;
-            color:red;
-      }
-      .name{
-        color:crimson;
-    
-    }
-    .role{
-        color: rgb(31, 255, 83);
-    }
-    h1{
-        color:white;
-    }
-    #img{
-        width:1000px;
-        position: relative;
-        top:180px;    
-    }
-    .my-tab{
-        background-color:black;
-    }
-    h2{
-        color:black;
-        font-family: 'Courier New', Courier, monospace;
-        text-align: center;
-    }
-    .txt{
-        color:black;
-    }
-    #maroon{
-        color:maroon;
-    }
-    #blue{
-        color:blue;
-    }
-    #orange{
-        color: orange;
-    }
-    #grey{
-       background-color:rgb(198, 194, 194);
-    }
-    .row{
-    padding: 10px 10px 80px 10px;
-    }
-    #info{
-        display:flex;
-        justify-content: center;
-    }
-    .badge{
-        font-size: medium;
-    }
-   
-    .footer{
-        height: 50vh;
-    }
-   #img-content{
-     display: none;
-    }
-    .text-over-img{
-         font-size: 1.2em;
-         color: black;
-         font-family: Georgia, 'Times New Roman', Times, serif;
-     }
-     .img{
-        width:100%;
-    border:solid;
-    border-color: black;
-
-     }
-     #img-content{
-         text-align: center;
-        display: block;
-        }
-  .about{
-      padding-bottom: 10px;
-  }
-
-  #tab{
-         padding: 10px;
-     }
-  #info h4{
-      color:white;
-  }
-  hr{
-      background-color:black;
-      height: 5px;
-  }
-
- 
-     @media(max-width: 1200px) {
-       
-         #img{
-             display:none;
-         }
-         h1{
-             font-size: 3rem;
-         }
-         #img{
-        width:300px;
-        position: relative;
-        top:-30px; 
-        left: 10px;  
-        border-radius: 1000px;
-        border-style: dotted;
-        border-color: cornflowerblue;
-    }
-    #name{
-        color:white;
-    }
-     .burg-tabs a{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: large;
-        background-color: black;
-     }
-  
-    .img-content{
-        text-align: center;
-    }
-    
-     }
-     @media(max-width:768px){
-        .img-wrap{
-            width: 500px;
-            height: 300px;
-        }
-        .slide{
-            display:none;
-        }
-        .item{
-            height: 300px !important;
-        }
-     .greet{
-         position:relative;
-         top:20px;
-     }
-     #name, #role{
-         font-size: 3em;
-     }
-     figcaption{
-         color:black;
-         text-align: center;
-         padding: 10px;
-     }
-   
- 
-    }  
-    @media(max-width:600px)
-    {
-        #tab{
-        display: none;
-    }
-    }
-
-
-
- 
-    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Black Market</title>
 </head>
+<style>
+header{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    grid-row: 1/2;
+}
+footer{
+    grid-row: 4/5;
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    background-color: black;
+
+    border-top: solid;
+    border-color: white;
+    grid-row: 2/3;
+}
+li{
+    display: inline;
+    margin: 0px 10px 0px 10px;
+    padding:10px;
+}
+li:hover{
+  background-color: gray;
+}
+a{
+    text-decoration: none;
+    color:white
+}
+
+.active{
+    color: blue;
+}
+.container{
+    display:grid;
+    grid-template-rows: 100px 50px auto 100px;;
+}
+main{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    align-content: center;
+    grid-row:3/4;
+}
+#item{
+    width: 100%;
+grid-row: 2/3;
+}
+.a{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.b{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.c{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.intro{
+    grid-column: 1/5;
+    display: flex;
+    justify-content: center;
+    grid-row: 1/2;
+}
+.sticky{
+    position: sticky;
+    z-index: 1020px;
+    top:0;
+}
+aside{
+    grid-column: 2/3;
+    display:grid;
+    grid-template-rows: auto auto;
+    border-left:solid;
+    border-right:solid;
+    border-color:black;
+    position: sticky;
+    top:25px;
+    z-index: 100;
+    height: 100vh
+}
+.products{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 30%;
+    grid-column:1/2;
+    grid-column-gap:25px;
+    grid-row-gap:25px;
+}
+.ad{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+blockquote{
+    text-align: justify;
+}
+#img{
+    width: 100%;    
+
+
+}
+.caption{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(175, 175, 175);
+    grid-row: 1/2;
+}
+button{
+grid-row: 3/4;
+background-color: black;
+color:white;
+cursor: pointer;
+}
+nav{
+    filter: opacity(80%);
+}
+
+
+
+
+
+</style>
 <body>
-
-
-            <div class="row intro" id="purple">
-                <div class="col-lg-4 col-md-12 col-sm-12  col-xs-12  greet">
-                    <img src="icon3.png" class="img-responsive" id="img">
-                    <br>
-                    <br>
-                </div>
-                    <div class="col-lg-8 col-md-12 col-sm-12  col-xs-12  greet">
-                    <h1 id="name">Hi, I'm <span class="name">Kim Vincent.</span></h1>
-                    <h1 id="role">I'm a <span class="role">Web Developer</span></h1>
-                    <br>
-                    <a href= "#about"><input type="button" value = "View Profile" class = "btn btn-info btn-lg"></a>
-    </div>  
-    </div>
-     </div>
-
-        <ul class="nav nav-tabs my-tab justify-content-end sticky-top" id="about">
-        
-            <li id="tab"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li id="tab"><a href="#About"><span class="glyphicon glyphicon-user"></span> About</a></li>
-            <li id="tab" class="#"><a href="#Portfolio"><span class="glyphicon glyphicon-pencil"></span> Portfolio</a></li>
-            <li id="tab"><a href="#number"><span class="glyphicon glyphicon-phone"></span> Contact</a></li>
+    <div class="container">
+    <header>
+        <h1>The Black Market</h1>
+    </header>
+    <nav class="sticky">
+        <ul>
+            <li><a href= "#" class="active">Home</a></li>
+            <li><a href= "#">About</a></li>
+            <li><a href= "#">Connect</a></li>
+            <li><a href= "#">Products</a></li>
+            <li><a href= "#">Hotline</a></li>
+            <li><a href= "#">Account</a></li>
         </ul>
+    </nav>
 
-    
-
-
-       
-            <div class="row kim" id="grey">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
-                    <hr>
-                <h2 class="justify-content-center">ABOUT</h2>
-                <hr>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h4><a href="#educ" data-toggle="collapse"><span class="glyphicon glyphicon-education"> Education</a></span></h4>  
-        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-2"> 
-       <div id="educ" class="collapse-in txt">Studied <span id= "blue">Bachelor of Science in Computer Engineering</span> at <span id="maroon"> Polytechnic University of the Philippines Binan Campus</span>
-    <div>Completed <span id ="blue">Web Development Level III</span> at <span id="maroon">American Tesol Institute Philippines Inc.</span></div>
-    </div></div>
-    </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h4><a href="#skills" data-toggle="collapse"><span class="glyphicon glyphicon-book"> Skills</span></a></h4>  
-        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-2"> 
-       <div id="skills" class="collapse-in txt"> 
-               <div>
-            <h4>Technologies</h4>
-               <span class="badge">HTML5</span>
-               <span class="badge">CSS3</span>
-               <span class="badge">Javascript</span>
-               <span class="badge">PHP</span>
-               <span class="badge">MySQL</span>
-               <span class="badge">Java</span>
-               <span class="badge">C#</span>
-               <span class="badge">Arduino</span>
-               <span class="badge">Photoshop</span>
-               <span class="badge">Video Editing</span>
-               <span class="badge">Autocad</span>
-               <span class="badge">CISCO Networking</span>
-               <span class="badge">Electronics</span>
-          
-            </div>
-            <div>
-                <h4>Frameworks</h4>
-                         <span class="badge">Materialize</span>
-                         <span class="badge">Bootstrap</span>
-                 </div>
-            <div>
-                <h4>Softskills</h4>
-                <span class="badge">MS Office</span>
-                <span class="badge">Research</span>
-                <span class="badge">Writing</span>
-                <span class="badge">Problem Solving</span>
-            </div>
-       </div>
-    </div>
+    <main>
+        <div class="products">
+        <div class="intro">
+        <h1>Our Products</h1>
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h4><a href="#contact" data-toggle="collapse"><span class="glyphicon glyphicon-log-in"> Experience</span></a></h4>  
-        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-2"> 
-<div id="contact" class="collapse-in txt">
-        <span id= "blue">Web Design Intern</span> at <span id="maroon"> METRO incorporated</span>
-    <div><span id= "blue">Embedded System Programming Intern</span> at <span id="maroon">Rosetech Automation Inc.</span></div>
-        </div>
-        </div>
-        </div>
-    </div>
-    </div>
-   
-
-        <div class="row slide" id="purple">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-           
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 col-md-12 ">
-        <div id="myCarousel" class="carousel slide" data-interval="5000" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data target="#myCarousel" data-slide-to="1" ></li>
-                <li data target="#myCarousel" data-slide-to="2" ></li>
-            </ol>
-            <div class="carousel-inner">
-                    <div class="active item">
-                        <div class="col-lg-10 col-lg-offset-1 ">
-                        <img src="55726320_395746594540082_6763541973199486976_n.jpg " class="img-wrap " alt="Arduino Based Paper Vending Machine">
-                        <div class="carousel-caption">
-                            <h3><b>Arduino Based Paper Vending Machine</b></h3>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-lg-10 col-lg-offset-1 col-xs-12">
-                        <img src="ADMINLOGIN.jpg" alt="PUPBC Library Management System" class="img-wrap ">
-                        <div class="carousel-caption">
-                            <h3><b>PUPBC Library Management System</b></h3>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-lg-10 col-lg-offset-1 col-xs-12">
-                    <img src="75279254_1317993971738068_4785850734736310272_n.jpg" class="img-wrap " alt="PUPBC Plastic Bottle Operated Water and Reverse Vending Machine">
-                    <div class="carousel-caption">
-                        <h3><b>PUPBC Plastic Bottle Operated Water and Reverse Vending Machine</b></h3>
-                    </div>
-                </div>
-                </div>   
+      
+        <div class="a">
+            <h3 class="caption">VR Box</h3>
+            <img src="13603287_1736843053238022_2269169925657281746_o.jpg" id="item">
+            <button>Avail Now</button>
             </div>
-            <a class="carousel-control left" href="#myCarousel" style="background-color: white;" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="carousel-control right" href="#myCarousel" style="background-color: white;" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
+            <div class="b">
+                <h3 class="caption">VR Box</h3>
+            <img src="13603287_1736843053238022_2269169925657281746_o.jpg" id="item">
+            <button>Avail Now</button>
         </div>
+        <div class="c">
+            <h3 class="caption">VR Box</h3>
+            <img src="13603287_1736843053238022_2269169925657281746_o.jpg" id="item">
+            <button>Avail Now</button>
         </div>
-     </div>
-    </div>
-</div>
-  
-    <div class="row" id="grey">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <hr>
-    <h2 id="Portfolio">PORTFOLIO</h2>
-    <hr>
-            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <img src="55726320_395746594540082_6763541973199486976_n.jpg" class="img">
-                <figcaption class="text-over-img">Arduino Based Paper Vending Machine</figcaption>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <img src="75279254_1317993971738068_4785850734736310272_n.jpg" class="img">
-                <figcaption class="text-over-img">Plastic Bottle Operated Water and Reverse Vending Machine</figcaption>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <img src="ADMINLOGIN.jpg" class="img">
-                <figcaption class="text-over-img">PUPBC Library Management System</figcaption>
-            </div>
-    </div>
-    </div>
-
-    <div class="row footer" id="purple">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <hr>
-    <h2 id="number">CONTACT</h2>
-    <hr>
-<div id="info">
-   <a href="#Contact" data-toggle="collapse"><span class="glyphicon glyphicon-phone"></span> Phone Number: </a>
-</div>
-   <div id="info">
-   <h4 class="collapse-in" id="Contact">09360241341</h4>
    </div>
-   <div id="info">
-   <a href="#Email" data-toggle="collapse"><span class="glyphicon glyphicon-envelope"></span> Gmail Address: </a>
-   </div>
-   <div id="info">
-   <h4 class="collapse-in" id="Email">aldaykimvincent5@gmail.com</h4>
+   <aside>
+       <div class="ad"><h2>Advertisements</h2></div>
+       <img src="13603287_1736843053238022_2269169925657281746_o.jpg" id="img">
+       <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odio veniam aliquam est voluptate! Quae, ratione cupiditate repellat officia obcaecati voluptas quisquam laboriosam debitis labore autem fugit consectetur, magnam adipisci.</blockquote>
+   </aside>
+    </main>
+    <footer>
+       <h5> Copyrights 2020. The Black Market</h5>
+    </footer>
     </div>
-</div>
-</div>
-
-   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-   <script src= "menubar.js"></script>
-   <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
