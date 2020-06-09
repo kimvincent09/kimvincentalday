@@ -1,106 +1,421 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel = "stylesheet" href = "style.css">
-    <title>KV Designs</title>
-</head>
-<style>
-  .burg{
-      border: solid;
-      border-color: black;
-      padding: 1px;
-      color: black
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script type="javascript" src = "js/bootstrap.min.js"></script>
+    <style>
+   
+         .item{
+            background: #333;
+            text-align: center;
+            height: 500px !important;
+        }
+        .carousel{
+            margin-top: 20px;
+        }
+        .img-wrap{
+            width: 700px;
+            height: 500px;
+        }
+        .carousel-caption{
+            text-shadow: black 5px 2px 5px;
+        }
+        .intro{
+       
+            color:white;
+            font-size: large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height: 100vh;;
+        }
+        .tab-content{
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding:0px;
+        }
+        .nav-tabs{
+            margin-bottom:0;
+        }
+        #purple{
+            background:linear-gradient(#333, #fff);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #purple h2{
+            color:white;  
+        }
+        #white{
+            background-color:white;
+        }
+        .nav-tabs a{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+        }
+        a:hover, a:active{
+            color: green;
+            text-decoration: none;
+        }
+       .kim a{
+           color: darkblue;
+        }
+        #img{
+            position: relative;
+            top: -200px;
+        }
+        .gradient{
+            text-decoration-color: blue;
+        }
+        .greet{
+            text-align: center;
+            
+        }
+         #nav{
+            text-decoration: none;
+            color:red;
+      }
+      .name{
+        color:crimson;
+    
+    }
+    .role{
+        color: rgb(31, 255, 83);
+    }
+    #name, #role{
+         font-size: 3em;
+     }
+    h1{
+        color:white;
+    }
+    #img{
+        width:1000px;
+        position: relative;
+        top:180px;    
+    }
+    .my-tab{
+        background-color:black;
+    }
+    h2{
+        color:black;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    .txt{
+        color:black;
+    }
+    #maroon{
+        color:maroon;
+    }
+    #blue{
+        color:blue;
+    }
+    #orange{
+        color: orange;
+    }
+    #grey{
+       background-color:rgb(198, 194, 194);
+    }
+    .row{
+    padding: 10px 10px 80px 10px;
+    }
+    #info{
+        display:flex;
+        justify-content: center;
+    }
+    .badge{
+        font-size: medium;
+    }
+   
+    .footer{
+        height: 50vh;
+    }
+   #img-content{
+     display: none;
+    }
+    .text-over-img{
+         font-size: 1.2em;
+         color: black;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+     }
+     .img{
+        width:100%;
+    border:solid;
+    border-color: black;
+
+     }
+     #img-content{
+         text-align: center;
+        display: block;
+        }
+  .about{
+      padding-bottom: 10px;
   }
-</style>
-<body>
-    <div class = "burger">
-        <div class = "burg"></div>
-        <div class = "burg"></div>
-        <div class = "burg"></div>
-        </div>
-   <nav class= "wrap">
-<nav class = "navbar">
-    <ul>
-        <li><a href = "#" class = "home"></a></li>
-        <li><a href = "#PB" class ="user"></a></li>
-        <li><a href = "#Contact" class = "msg"></a></li>
-    </ul>
-</nav>
-</nav>
 
 
+  #info h4{
+      color:white;
+  }
+  hr{
+      background-color:black;
+      height: 5px;
+  }
 
+ 
+     @media(max-width: 1200px) {
+       
+         #img{
+             display:none;
+         }
+         h1{
+             font-size: 3rem;
+         }
+         #img{
+        width:300px;
+        position: relative;
+        top:-30px; 
+        left: 10px;  
+        border-radius: 1000px;
+        border-style: dotted;
+        border-color: cornflowerblue;
+    }
+    #name{
+        color:white;
+    }
+     .burg-tabs a{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: large;
+        background-color: black;
+     }
   
+    .img-content{
+        text-align: center;
+    }
+    
+     }
+     @media(max-width:768px){
+        .img-wrap{
+            width: 500px;
+            height: 300px;
+        }
+        .slide{
+            display:none;
+        }
+        .item{
+            height: 300px !important;
+        }
+     .greet{
+         position:relative;
+         top:20px;
+     }
 
-    <img src = "images/Mainbg.jpg" class = "mainbg">
+     figcaption{
+         color:black;
+         text-align: center;
+         padding: 10px;
+     }
    
-   
+ 
+    }  
+    @media(max-width:600px)
+    {
+        #tab{
+        display: none;
+    }
+    }
 
 
 
+ 
+    </style>
+</head>
+<body>
 
 
-    <div class = "content">
-       <center> <h1 class = "PB" id = "PB">About Me</h1></center>
-      <hr>
+            <div class="row intro" id="purple">
+                <div class="col-lg-4 col-md-12 col-sm-12  col-xs-12  greet">
+                    <img src="icon3.png" class="img-responsive" id="img">
+                    <br>
+                    <br>
+                </div>
+                    <div class="col-lg-8 col-md-12 col-sm-12  col-xs-12  greet">
+                    <h1 id="name">Hi, I'm <span class="name">Kim Vincent.</span></h1>
+                    <h1 id="role">I'm a <span class="role">Web Developer</span></h1>
+                    <br>
+                    <a href= "#about"><input type="button" value = "View Profile" class = "btn btn-info btn-lg"></a>
+    </div>  
+    </div>
+     </div>
 
-  <center>  <h2 class "PB" id = "Intro">Introduction</h2></center>
-  <div class = "sm">
-      <div class = "intro">
-    <p>  Hi, I'm Kim! I am a currently taking up a degree of Bachelor of Science in Computer Engineering at the Polytechnic University of the Philippines - Binan Campus. I am also currently available for job offers regarding web development, arduino prototyping, autocad and computer networking. You may refer to the skillset I have listed below.</p>
-      </div>
-</div>
+        <ul class="nav nav-tabs my-tab justify-content-end sticky-top" id="about">
+        
+            <li id="tab"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li id="tab"><a href="#About"><span class="glyphicon glyphicon-user"></span> About</a></li>
+            <li id="tab" class="#"><a href="#Portfolio"><span class="glyphicon glyphicon-pencil"></span> Portfolio</a></li>
+            <li id="tab"><a href="#number"><span class="glyphicon glyphicon-phone"></span> Contact</a></li>
+        </ul>
+
     
 
-       <center> <h2 class = "PB" id = "Skills">Skills</h2></center>
 
-      <div class="sm">
-      <div class="skills">
-           
-          <img src = "images/microsoft-office-png-hd-microsoft-office-2016-logo-817.png" class="img-container" title="Microsoft Office">
-            <img src="images/java-logo-png-transparent.png" class="img-container" title="Java">
-                <img src = "images/C_Sharp_logo.png" class="img-container" title="C#">
-                    <img src="images/pS.png" class="img-container" title = "Photoshop"> 
-                         <img src="images/arduino-1-logo-png-transparent.png" class="img-container" id = "spin" title="Arduino">
-                            <img src="images/HTML.png" class="img-container" title="HTML" >
-                              <img src="images/CSS.png" class="img-container" title="CSS">
-                                  <img src="images/JS.png" class="img-container" title="JavaScript">
-                                    <img src="images/MySQL.png" class="img-container" title="MySQL">
-      </div>
-      </div>
-
-
-
-<center> <h1 class = "PB" id = "Contact">Contact Details</h1>
-<hr>
-<div class ="sm">
-<p>Name: Kim Vincent P. Alday</p>
-<p>Mobile no.: +63 936 024 1341</p>
-
-
-    <h3>You can also reach me at:</h3>
-<a href = "https://www.facebook.com/kimvincent09"><img src = "images/facebook.png" class = "smp" ></a>
-<a href = "https://www.twitter.com/aldzvinz"><img src = "images/twitter.png"  class = "smt"></a>
-<a href = "https://www.linkedin.com/kimvincentalday"><img src = "images/linkedin.png"  class = "smp" ></a>
-<img src = "images/gmail.png" title= "aldaykimvincent5@gmail.com"  class = "smt">
-<a href = "https://github.com/kimvincent09"><img src = "images/github.png" class = "smt git"></a>
-</div>
-</center>
-<hr>
-<footer>
-    <div class = "sm">
-  <center>  <p>Copyrights Reserved 2019 by Kim Vincent P. Alday</p></center>
+       
+            <div class="row kim" id="grey">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                    <hr>
+                <h2 class="justify-content-center">ABOUT</h2>
+                <hr>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h4><a href="#educ" data-toggle="collapse"><span class="glyphicon glyphicon-education"> Education</a></span></h4>  
+        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-2"> 
+       <div id="educ" class="collapse-in txt">Studied <span id= "blue">Bachelor of Science in Computer Engineering</span> at <span id="maroon"> Polytechnic University of the Philippines Binan Campus</span>
+    <div>Completed <span id ="blue">Web Development Level III</span> at <span id="maroon">American Tesol Institute Philippines Inc.</span></div>
+    </div></div>
     </div>
-</footer>
-</div></div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h4><a href="#skills" data-toggle="collapse"><span class="glyphicon glyphicon-book"> Skills</span></a></h4>  
+        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-2"> 
+       <div id="skills" class="collapse-in txt"> 
+               <div>
+            <h4>Technologies</h4>
+               <span class="badge">HTML5</span>
+               <span class="badge">CSS3</span>
+               <span class="badge">Javascript</span>
+               <span class="badge">PHP</span>
+               <span class="badge">MySQL</span>
+               <span class="badge">Java</span>
+               <span class="badge">C#</span>
+               <span class="badge">Arduino</span>
+               <span class="badge">Photoshop</span>
+               <span class="badge">Video Editing</span>
+               <span class="badge">Autocad</span>
+               <span class="badge">CISCO Networking</span>
+               <span class="badge">Electronics</span>
+          
+            </div>
+            <div>
+                <h4>Frameworks</h4>
+                         <span class="badge">Materialize</span>
+                         <span class="badge">Bootstrap</span>
+                 </div>
+            <div>
+                <h4>Softskills</h4>
+                <span class="badge">MS Office</span>
+                <span class="badge">Research</span>
+                <span class="badge">Writing</span>
+                <span class="badge">Problem Solving</span>
+            </div>
+       </div>
+    </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h4><a href="#contact" data-toggle="collapse"><span class="glyphicon glyphicon-log-in"> Experience</span></a></h4>  
+        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-2"> 
+<div id="contact" class="collapse-in txt">
+        <span id= "blue">Web Design Intern</span> at <span id="maroon"> METRO incorporated</span>
+    <div><span id= "blue">Embedded System Programming Intern</span> at <span id="maroon">Rosetech Automation Inc.</span></div>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+   
 
+        <div class="row slide" id="purple">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+           
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 col-md-12 ">
+        <div id="myCarousel" class="carousel slide" data-interval="5000" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data target="#myCarousel" data-slide-to="1" ></li>
+                <li data target="#myCarousel" data-slide-to="2" ></li>
+            </ol>
+            <div class="carousel-inner">
+                    <div class="active item">
+                        <div class="col-lg-10 col-lg-offset-1 ">
+                        <img src="55726320_395746594540082_6763541973199486976_n.jpg " class="img-wrap " alt="Arduino Based Paper Vending Machine">
+                        <div class="carousel-caption">
+                            <h3><b>Arduino Based Paper Vending Machine</b></h3>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-lg-10 col-lg-offset-1 col-xs-12">
+                        <img src="ADMINLOGIN.jpg" alt="PUPBC Library Management System" class="img-wrap ">
+                        <div class="carousel-caption">
+                            <h3><b>PUPBC Library Management System</b></h3>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-lg-10 col-lg-offset-1 col-xs-12">
+                    <img src="75279254_1317993971738068_4785850734736310272_n.jpg" class="img-wrap " alt="PUPBC Plastic Bottle Operated Water and Reverse Vending Machine">
+                    <div class="carousel-caption">
+                        <h3><b>PUPBC Plastic Bottle Operated Water and Reverse Vending Machine</b></h3>
+                    </div>
+                </div>
+                </div>   
+            </div>
+            <a class="carousel-control left" href="#myCarousel" style="background-color: white;" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel" style="background-color: white;" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+        </div>
+     </div>
+    </div>
+</div>
+  
+    <div class="row" id="grey">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <hr>
+    <h2 id="Portfolio">PORTFOLIO</h2>
+    <hr>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                <img src="55726320_395746594540082_6763541973199486976_n.jpg" class="img">
+                <figcaption class="text-over-img">Arduino Based Paper Vending Machine</figcaption>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                <img src="75279254_1317993971738068_4785850734736310272_n.jpg" class="img">
+                <figcaption class="text-over-img">Plastic Bottle Operated Water and Reverse Vending Machine</figcaption>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                <img src="ADMINLOGIN.jpg" class="img">
+                <figcaption class="text-over-img">PUPBC Library Management System</figcaption>
+            </div>
+    </div>
+    </div>
 
+    <div class="row footer" id="purple">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <hr>
+    <h2 id="number">CONTACT</h2>
+    <hr>
+<div id="info">
+   <a href="#Contact" data-toggle="collapse"><span class="glyphicon glyphicon-phone"></span> Phone Number: </a>
+</div>
+   <div id="info">
+   <h4 class="collapse-in" id="Contact">09360241341</h4>
+   </div>
+   <div id="info">
+   <a href="#Email" data-toggle="collapse"><span class="glyphicon glyphicon-envelope"></span> Gmail Address: </a>
+   </div>
+   <div id="info">
+   <h4 class="collapse-in" id="Email">aldaykimvincent5@gmail.com</h4>
+    </div>
+</div>
+</div>
 
-
-<script src = "menubar.js"></script>
-
-</body>
+   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src= "menubar.js"></script>
+   <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
 </html>
